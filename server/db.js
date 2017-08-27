@@ -20,4 +20,4 @@ exports.connect = function(url, done) {
 
 exports.get = function() {
   return state.db;
-}
+};

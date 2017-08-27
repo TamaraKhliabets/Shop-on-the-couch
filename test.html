@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Test</title>
-     <script type="text/javascript" src="testbundle.js"></script>
+     <script type="text/javascript" src="./server/server.js"></script>
 
   </head>
   <body>
-    <p id="demo" onclick="myFunction()">Hello</p>
-    <!--<script type="text/javascript">-->
-
-
-
-    <!--function myFunction() {-->
-        <!--document.getElementById("demo").innerHTML = 'Hi';-->
-      <!--};-->
-    <!--</script>-->
+    <p id="demo">Hello</p>
+    <script>
+        let a;
+        function loadData() {
+            load(data)
+                .then(data => {
+                a = data;
+            })
+        };
+    document.getElementById('demo').innerHTML = a;
+    </script>
 </body>
 </html>

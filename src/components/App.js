@@ -1,4 +1,4 @@
-const css = require('./../app.scss');
+// const css = require('./../app.scss');
 //
 // import React from 'react';
 // import ReactDOM from 'react-dom';
@@ -66,17 +66,20 @@ const css = require('./../app.scss');
 
 
 import React, { Component } from 'react';
-import List from './List';
-import Home from './Home';
-import Fiction from './Fiction';
+import Title from './Title';
+import Menu from './Menu';
+import MainPage from './MainPage';
+import Sidebar from './Sidebar';
 
 export default class App extends Component {
   render() {
     return (
-      <div>
-        <h1 className='name'>Book Store</h1>
-        <List />
-      </div>
+        <div>
+            <Title />
+            <Menu />
+            <Sidebar />
+            <MainPage/>
+        </div>
     );
   }
 }
